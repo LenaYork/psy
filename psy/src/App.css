@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.option {
+  margin-right: 10px;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 5px; 
+}
+
+.button:hover {
+  cursor: pointer;
+}
