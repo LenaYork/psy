@@ -1,0 +1,58 @@
+.main-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tests-title, .services-title {
+    text-align: center;
+}
+
+/* .title {
+    margin-right: 15%;
+} */
+
+.test-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.test-button {
+    width: 200px;
+    height: 100px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.test-button:hover{
+    cursor: pointer;
+    background-color: #fff8f8;
+}
+
+.test-button-text {
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item p:nth-child(1) {
+    width: 300px;
+}
