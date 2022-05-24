@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Caveat";
+    src: url("./fonts/Caveat.ttf");
+    }
+
 .main-container {
     max-width: 700px;
     margin: 0 auto;
@@ -55,4 +60,12 @@
 
 .item p:nth-child(1) {
     width: 300px;
+}
+
+h1 {
+    font-family: 'Caveat', Arial, sans-serif;
+}
+
+body {
+    font-family: 'Caveat', Arial, sans-serif;
 }
