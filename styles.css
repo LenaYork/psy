@@ -28,8 +28,8 @@
 }
 
 .test-button {
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
     border: 1px solid silver;
     box-sizing: border-box;
     padding: 15px 15px;
@@ -46,25 +46,9 @@
     text-align: center;
 }
 
-.enrol-button {
-    margin: 30px auto;
-    margin-top: 20px;
-    padding: 30px;
-    width: 80%;
-    height: 200px;
-    border: 1px solid silver;
-}
-
-
 .items-container {
     display: flex;
     flex-direction: column;
-}
-
-.item {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
 }
 
 .item-info {
@@ -73,14 +57,6 @@
     border: 1px solid silver;
     box-sizing: border-box;
     padding: 30px 5px;
-}
-
-.item-info:nth-child(1) {
-    width: 800px;
-}
-
-.item-info:nth-child(2), .item-info:nth-child(3) {
-    width: 40%;
 }
 
 h1 {
@@ -141,4 +117,84 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "name-item name-item name-item length-item"
                         "description-item description-item description-item price-item";
+}
+
+@media screen and (min-width: 700px) {
+
+    .item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .item-info:nth-child(1) {
+        width: 800px;
+    }
+
+    .item-info:nth-child(2), .item-info:nth-child(3) {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    .item {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; */
+        grid-template-areas: "name-info name-info"
+                                "meeting-info price-info";
+    }
+
+    .item-info {
+        text-align: center;
+    }
+
+    .name-info {
+        grid-area: name-info;
+    }
+
+    .meeting-info {
+        grid-area: meeting-info;
+    }
+
+    .price-info {
+        grid-area: price-info;
+    }
+}
+ 
+
+@media screen and (min-width: 601px) {
+
+    .enrol-button {
+        margin: 30px auto;
+        margin-top: 20px;
+        padding: 30px;
+        width: 80%;
+        height: 200px;
+        border: 1px solid silver;
+    }
+
+    .test-buttons {
+        flex-direction: row;
+    }
+
+    .test-button {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .test-buttons {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .enrol-button {
+        margin: 30px auto;
+        margin-top: 10px;
+        padding: 15px;
+        border: 1px solid silver;
+    }
 }
