@@ -212,3 +212,26 @@ body {
         text-align: center;
     }
 }
+
+.sert {
+    width: 700px;
+    max-width: 100%;
+}
+
+/* цвета стрелок слайдера */
+.slick-arrow::before {
+    background-color: #b7b4b4;
+}
+
+@media screen and (max-width: 780px) {
+    .slick-prev {
+        left: 7%!important;
+        z-index: 99;
+    }
+    
+    .slick-next {
+        right: 10%!important;
+        z-index:9;
+    }
+}
+

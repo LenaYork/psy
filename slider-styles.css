@@ -8,9 +8,14 @@
 	margin: 0 auto;
 }
 
+#slider .image {
+	
+	display: flex;
+}
+
 #slides article{ /*все изображения справа друг от доруга*/
 	width: 20%;
-	float: left;
+	/* float: left; */
 }
 
 #slides .image{ /*устанавливает общий размер блока с изображениями*/
@@ -37,7 +42,18 @@ article img{ /*размер изображений слайдера*/
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
-#switch5:checked ~ #controls label:nth-child(4){
+#switch5:checked ~ #controls label:nth-child(4),
+#switch1:checked ~ #controls label:nth-child(6), 
+#switch2:checked ~ #controls label:nth-child(7),
+#switch3:checked ~ #controls label:nth-child(8),
+#switch4:checked ~ #controls label:nth-child(9),
+#switch1:checked ~ #controls label:nth-child(10), 
+#switch2:checked ~ #controls label:nth-child(11),
+#switch3:checked ~ #controls label:nth-child(12),
+#switch4:checked ~ #controls label:nth-child(13),
+#switch1:checked ~ #controls label:nth-child(14), 
+#switch2:checked ~ #controls label:nth-child(15),
+#switch3:checked ~ #controls label:nth-child(20){
 	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: left;
 	margin: 0 0 0 -84px; /*сдвиг влево*/
@@ -136,5 +152,5 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 .sert {
-    /* width: 400px; */
+    height: 700px;
 }
