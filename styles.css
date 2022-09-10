@@ -18,9 +18,16 @@
     text-align: center;
 }
 
-/* .title {
-    margin-right: 15%;
-} */
+.avatar {
+    width: 200px;
+    max-width: 100%; 
+    height: auto;
+}
+
+.title {
+    width: 70%;
+    text-align: center;
+}
 
 .test-buttons {
     display: flex;
@@ -111,6 +118,9 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+    .title {
+        /* margin-right: 15px; */
+    }
 
     .item {
         display: flex;
@@ -137,6 +147,10 @@ body {
 }
 
 @media screen and (max-width: 699px) {
+
+    .title {
+        font-size: 2.3rem;
+    }
 
     .item {
         display: grid;
@@ -195,6 +209,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .title {
+        font-size: 2.3rem;
+    }
+
     .test-buttons {
         flex-direction: column;
         margin: 0 auto;
@@ -235,3 +253,18 @@ body {
     }
 }
 
+@media screen and (max-width: 520px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .avatar {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 2rem;
+    }
+}
