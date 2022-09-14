@@ -3,6 +3,10 @@
     src: url("./fonts/Caveat.ttf");
     }
 
+body{
+    background-color: #DB9730;
+}
+
 .main-container {
     max-width: 700px;
     margin: 0 auto;
